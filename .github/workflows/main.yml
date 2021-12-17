@@ -41,7 +41,9 @@ jobs:
           sudo apt -y install docker-compose
           echo "\n>>> "$(date +%F%n%T) "Install docker-compose Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Starting docker Service...... "
-          sudo systemctl start docker
+          sudo systemctl unmask docker.service
+          sudo systemctl unmask docker.socket
+          sudo systemctl start docker.service
           echo ">>> "$(date +%F%n%T) "Docker Service Starts Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Initializing JD-Scripts-Docker...... \n"
           sudo docker rm -f jd1
