@@ -64,7 +64,7 @@ docker-compose logs
 docker-compose down
 ```
 
-## 1.为了方便使用，已配置Github Action，每日自动运行一次，配置脚本详见./github/workflows/main.yaml；
+## 1.为了方便使用，已配置Github Action，每日自动运行一次，配置脚本详见./github/workflows/main.yml；
 
 ## 2.为了方便使用，可以直接在Linux机器上下载运行jd-docker.sh，推荐使用云服务器；
 
