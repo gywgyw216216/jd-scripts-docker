@@ -35,6 +35,7 @@ jobs:
           sudo apt -y install git
           echo "\n>>> "$(date +%F%n%T) "Install git Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Installing docker...... \n"
+          sudo apt -y install containerd
           sudo apt -y install docker
           sudo apt -y install docker.io
           echo "\n>>> "$(date +%F%n%T) "Install docker Successfully! \n"
