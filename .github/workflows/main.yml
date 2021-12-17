@@ -9,6 +9,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  schedule:
+    - cron: '0 0 * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,9 +33,6 @@ jobs:
           echo ">>> "$(date +%F%n%T) "Updating apt...... \n"
           sudo apt update
           echo ">>> "$(date +%F%n%T) "Update apt Successfully! \n"
-          echo ">>> "$(date +%F%n%T) "Installing git...... \n"
-          sudo apt -y install git
-          echo "\n>>> "$(date +%F%n%T) "Install git Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Installing docker...... \n"
           sudo apt -y install runc
           sudo apt -y install containerd
