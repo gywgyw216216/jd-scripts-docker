@@ -36,14 +36,14 @@ jobs:
           echo "\n>>> "$(date +%F%n%T) "Install git Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Installing docker...... \n"
           sudo apt -y install docker
+          sudo apt -y install docker.io
           echo "\n>>> "$(date +%F%n%T) "Install docker Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Installing docker-compose...... \n"
           sudo apt -y install docker-compose
           echo "\n>>> "$(date +%F%n%T) "Install docker-compose Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Starting docker Service...... "
-          sudo systemctl unmask docker.service
-          sudo systemctl unmask docker.socket
-          sudo systemctl start docker.service
+          sudo systemctl enable docker
+          sudo systemctl restart docker
           echo ">>> "$(date +%F%n%T) "Docker Service Starts Successfully! \n"
           echo ">>> "$(date +%F%n%T) "Initializing JD-Scripts-Docker...... \n"
           sudo docker rm -f jd1
