@@ -44,4 +44,4 @@ jobs:
         sudo systemctl enable docker
         sudo systemctl restart docker
         sudo docker-compose up --build --force-recreate --detach jd1
-        sudo docker exec jd1 bash -c 'set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; ls jd_*.js | xargs -i node {}'
+        sudo docker exec jd1 bash -c 'set -o allexport; source /all; source /env; source /jd-scripts-docker/resolve.sh; cd /scripts; node jd_bean_sign.js'
