@@ -64,8 +64,8 @@ docker-compose logs
 docker-compose down
 ```
 
-## 1.为了方便使用，已配置Github Action，每日自动运行一次，配置脚本详见./github/workflows/main.yml；
+## 1.为了方便使用，可以选择配置Github Action，每日自动运行一次，必须使用签到测试命令，否则有封禁action的风险，配置脚本详见action/main.yml；
 
-## 2.为了方便使用，可以直接在Linux机器上下载运行jd-docker.sh，推荐使用云服务器；
+## 2.为了方便使用，可以直接在Linux机器上下载运行jd-docker.sh，此处可以使用全量测试命令，推荐使用云服务器；
 
-## 3.只需要配置好上述相关参数，并或者针对jd-docker.sh修改git clone处为自己的仓库地址。
+## 3.只需要配置好上述相关参数，并或者针对jd-docker.sh修改git clone处为自己的仓库地址，其中Server酱参数估计因为改版已失效。
