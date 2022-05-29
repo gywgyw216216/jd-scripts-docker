@@ -11,6 +11,11 @@ docker rm -f `docker ps -q`
 docker rmi -f `docker images -q`
 docker volume rm -f `docker volume ls -q`
 
+rm -rf /var/lib/docker/overlay2/*
+rm -rf /var/lib/docker/image/*
+rm -rf /var/lib/docker/containers/*
+rm -rf /var/lib/docker/volumes/*
+
 snap set system refresh.retain=2
 
 apt -y autoremove --purge
