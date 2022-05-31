@@ -25,7 +25,7 @@ rm -rf /etc/apt/sources.list.d
 
 apt update -y
 
-echo ">>> "$(date +%F%n%T) "Update apt Successfully! \n"
+echo ">>> "$(date +%F%n%T) "Initialize Environment Successfully! \n"
 echo ">>> "$(date +%F%n%T) "Installing docker...... \n"
 apt -y install runc containerd docker docker.io docker-compose
 echo "\n>>> "$(date +%F%n%T) "Install docker Successfully! \n"
