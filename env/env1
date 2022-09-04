@@ -1,4 +1,4 @@
 #!/bin/bash
-pt_key=AAJi0gJ5ADDRgrLka9Cm7onv6CgcHI9vAMLhzQNOLg5Oj_H5BnR5lVoAnAQwPjcRb4TlG0mz0OY
+pt_key=AAJjFA0VADCMxCH31zTAKr3S-naxDd2ltwYczLIJug5fmeNeRWlk5K2x7YWsfUaEWykPlYTpfRc
 pt_pin=jd_731f2800b626b
 JD_COOKIE="pt_key=$pt_key;pt_pin=$pt_pin;"
