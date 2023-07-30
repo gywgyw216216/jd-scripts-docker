@@ -37,7 +37,7 @@ echo ">>> "$(date +%F%n%T) "Initializing JD-Scripts-Docker...... \n"
 
 cd /root/
 rm -rf ./jd-scripts-docker/
-git clone git://github.com/gywgyw216216/jd-scripts-docker.git
+git clone https://github.com/gywgyw216216/jd-scripts-docker.git
 cd jd-scripts-docker
 
 echo "\n>>> "$(date +%F%n%T) "Initialize JD-Scripts-Docker Successfully! \n"
